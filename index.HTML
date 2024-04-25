@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,775;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
+    <title>Shopping Cart App</title>
+  </head>
+
+  <body>
+    <!-- Your code goes here -->
+    <!-- <div class="container">
+        <a href="https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code/blob/main/Readme.md" target="_blank">Read how to work with boilerplate</a>
+    </div> -->
+    <main id="mainContainer">
+      <div id="leftContainer">
+        <div id="mainImgContainer">
+          <!-- Main Image container -->
+          <img
+            src="https://s3-alpha-sig.figma.com/img/d636/7d6d/f34ce14e7187edeeb026d73413e4a29c?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Nejz5M5nvkC~ufQ6L~VnA1ATv-nDdbhOpUONmrNOKs053lqTtnY58s-zNJuJEMI4Vf3qUdsjgrpGY7h6z516wfe~uP-y5IH6uA8w5YatUGJ8WcNC~34AJGTYXtAJhg65xAksMNcjOqHoa333mqgjUZkioDqHMyENuIQ-BCaQ0lmrQfN-tEf~JgOT0LBvMfEIsD6SmDuqBC9a6TfarxaPINCJBva65uwUy1jDI4vazV-oteyKhx4ZqUMsgZxWXUdwEd4M5AE8fs0649bWpgKgasM~GiPDr6Ws3sxJzQo3JoXX0546yXxve49shSedcSxulVrJKl~tfkoLZddSOu2LYw__"
+            alt=""
+            id="mainImg"
+          />
+        </div>
+        <div id="thumbnailContainer">
+          <!-- Thumbnail Images -->
+          <img
+            src="https://s3-alpha-sig.figma.com/img/2b85/4ec0/815f49c8ce3ddd231e2da63ce0596dc4?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aYg4oxHEv20diWN5kTt8pX0I6HqtzpJ9mhTSnw4Fk5vABxzbEWcuEMANZf6WYqs5CdBVuV~8TDeo7PTCANU1wq~79tHkkXTEREqNeWkI3n~C-33oQ9K5CBlk06xjxxGr1z0Vo6eeOvaEoSDU0v1SNM0SbadFyOBPRyGIkZ5IIdoJ-nMBNDH-3r6xo5u7JIhppuKPnYUwjtWdrfs2w7oghrK~PnL1tZcGZs7cD0RJNn8~YzdaCKdoLySRw0pu03wIiQTXLOnDUEWLiCCD2WAhGtIlVUKhMT~q8vEr2z1COlWERsX3DFWYbbGI9JWCtAmgPJW-2lDdAgboi5DrZMN5vA__"
+            alt=""
+            class="ThumbnailImg"
+          />
+          <img
+            src="https://s3-alpha-sig.figma.com/img/7f07/20f0/38539658df252c621f52c64231e8986a?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IkYANVwb0N6zY3AwWqcq5lB84n2FDEm9hgUlSkqAykc6zFnKgTgDfvxHru3z2qC8gzmNxEsQPFUg43zqg4ZG2TURdpX6z1k7LcrcQtESCGmxI8aMf6b~RRjJ56b~JcOxnEJz2hCfqA~5SpgXSsvGIawgHehsAI8aLD1iNucIcAu7bvQ944UUbKlBV5tU50C4AH4aXUtBpq49h6V1q35oUUVwai39ZNWUBdDzuoYQF1jlLiXg3hPrWCgI-56lt00gQi1LIPbCAsZMuC2uQ5GKAPKJlJeKoAaZO-aEQ672wchWkNycBkidn9SRg9vWJ9olIv6BV6iX5U5kuBsE9eKmjw__"
+            alt=""
+            class="ThumbnailImg"
+          />
+          <img
+            src="https://s3-alpha-sig.figma.com/img/8a12/5fd1/8ad1df2ca3d3367baa54e79cf0caeff1?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Jee39xSK-TesGDdB4ikB7AeAzHgVZEFSLCPmpsdWiDKF7tlLYIki12B8egIzHvHJFiDrlZ77yO6xeARgsawZtAhN3Dai82rxuDiqaFhuJqgB9qGnRKL~y7bKBGbmFbEnUQKoNp29mcaNh2HegzYJrqCCWaGrjD9HFou9fbFikeJeC1MifBEmFtlCpI~z0bqSKy45yEt7uAjCxGCorYJ~tNIOJ2ydgJ2qkXXLfWWfyye1Ukc1D1tEWSil8eicHE122yrDud89gKQ9VjwqNTx-3LlrY8LlrpT9GRUoB3yHbjN6PXD2AeqQ0NeTG5SvvMPV5fNbJJJmX31UN5Hmd178Bw__"
+            alt=""
+            class="ThumbnailImg"
+          />
+          <img
+            src="https://s3-alpha-sig.figma.com/img/2b85/4ec0/815f49c8ce3ddd231e2da63ce0596dc4?Expires=1714953600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aYg4oxHEv20diWN5kTt8pX0I6HqtzpJ9mhTSnw4Fk5vABxzbEWcuEMANZf6WYqs5CdBVuV~8TDeo7PTCANU1wq~79tHkkXTEREqNeWkI3n~C-33oQ9K5CBlk06xjxxGr1z0Vo6eeOvaEoSDU0v1SNM0SbadFyOBPRyGIkZ5IIdoJ-nMBNDH-3r6xo5u7JIhppuKPnYUwjtWdrfs2w7oghrK~PnL1tZcGZs7cD0RJNn8~YzdaCKdoLySRw0pu03wIiQTXLOnDUEWLiCCD2WAhGtIlVUKhMT~q8vEr2z1COlWERsX3DFWYbbGI9JWCtAmgPJW-2lDdAgboi5DrZMN5vA__"
+            alt=""
+            class="ThumbnailImg"
+          />
+        </div>
+      </div>
+      <div id="rightContainer">
+        <!-- Description container -->
+        <div id="titlesDiv">
+          <p id="vendor"></p>
+          <h2 id="title"></h2>
+          <hr />
+        </div>
+        <div>
+          <h2 id="discountedPrice">.00</h2>
+          <span id="discount">35% Off</span>
+          <p id="actualPrice">$19999.00</p>
+          <hr />
+        </div>
+        <div>
+          <p class="chooseTitle">Choose a color</p>
+          <div id="colorBoxContainer">
+            <div class="colorBox colorBox1">
+              <span class="colorPicker colorPicker1"> </span>
+            </div>
+            <div class="colorBox colorBox2">
+              <span class="colorPicker colorPicker2"> </span>
+            </div>
+            <div class="colorBox colorBox3">
+              <span class="colorPicker colorPicker3"> </span>
+            </div>
+            <div class="colorBox colorBox4">
+              <span class="colorPicker colorPicker4"> </span>
+            </div>
+          </div>
+          <hr />
+        </div>
+        <div>
+          <p class="chooseTitle">Choose a size</p>
+          <div id="sizeParentContainer">
+            <div id="sizeContainer"></div>
+          </div>
+        </div>
+        <div class="btnContainer">
+          <button class="valueBtn"><span>-</span>1<span>+</span></button>
+          <button class="addToCartBtn">
+            <i class="fas fa-shopping-bag"></i>
+            Add To Cart
+          </button>
+        </div>
+        <hr />
+        <div id="descContainer"></div>
+      </div>
+    </main>
+    <!-- Happy coding 😊 -->
+    <script src="./script.js"></script>
+  </body>
+</html>
